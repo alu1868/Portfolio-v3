@@ -16,32 +16,91 @@
   <title>AboutMe</title>
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div>
-      <nav>
-        <!-- Logo -->
-        <a></a>
-        <!-- Nav Links -->
-        <ul></ul>
-      </nav>
-    </div>
-  </header>
 
   <!-- Section A: Hero Banner -->
-  <div></div>
+  <header id="header-home">
+    <div class="container">
+      <!-- Sectiona A.1: Navigation Bar -->
+      <nav>
+        <a id="nav-logo" href="index.html">
+          <!-- [NEED TO FIND LOGO TO USE FOR SITE] -->
+          <img src="." alt="my portfolio" id="logo">
+        </a>
+        <!-- Nav Links -->
+        <ul>
+          <li><a href="index.html" class="current">Home</a></li>
+          <li><a href="index.html">About</a></li>
+          <li><a href="index.html">Work</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Section A.2: Hero Banner -->
+      <div>
+        <h1>Hi I'm Alex,</h1>
+        <h2>
+          <span class="txt-type" data-wait="4000"
+          data-words='["A Full Stack Developer", "Green Energy Aficionado", "Amateur Film-Making Enthusiast"]'></span>
+        </h2>
+        <p>I specialize in Full Stack Web Development with a focus on JavaScript, React, Nodejs, and MongoDB</p>
+        <a href="work.html" class="btn-light">Check Out My Work</a>
+      </div>
+    </div>
+  </header>
 
   <!-- Section B: Transition Color Banner -->
   <div id="transitionA"></div>
 
   <!-- Section C: About Me -->
   <section>
-    <container></container>
-  </section>
-
-  <!-- Section D: About Me Continued -->
-  <section>
-    <container></container>
+    <container>
+      <!-- Sectiona C.1: Photo + Brief Description -->
+      <div>
+        <img src="./assets/images/self-portrait.jpg" alt="Alex Lu">
+        <h3>Alexander Lu</h3>
+        <h4>Full-Stack Web Developer based in Austin Texas</h4>
+      </div>
+      <!-- Section C.2: My Strengths title -->
+      <div>
+        <h5>MY STRENGTHS</h5>
+        <p>Both my professional and personal experiences have provided my with a quicver of valuable skills</p>
+      </div>
+      <!-- Section C.3: Strengths Allocation -->
+      <content>
+        <!-- Section C.3.1: Problem Solving -->
+        <div>
+          <!-- Icon -->
+          <i></i>
+          <h6>PROBLEM SOLVING/CRITICAL THINKING</h6>
+          <p></p>
+          <p></p>
+        </div>
+        <!-- Section C.3.2: Teamwork/Communication -->
+        <div>
+          <!-- Icon -->
+          <i></i>
+          <h6>TEAMWORK/COMMUNICATION</h6>
+          <p></p>
+          <p></p>
+        </div>
+        <!-- Section C.3.3: Creativity/Critical Thinking -->
+        <div>
+          <!-- Icon -->
+          <i></i>
+          <h6>CREATIVITY/CRITICAL THINKING</h6>
+          <p></p>
+          <p></p>
+        </div>
+        <!-- Section C.3.4: Attentive/Aware -->
+        <div>
+          <!-- Icon -->
+          <i></i>
+          <h6>ATTENTIVE/AWARE</h6>
+          <p></p>
+          <p></p>
+        </div>
+      </content>
+      <a href="contact.html" class="btn-light">Let's Work Together</a>
+    </container>
   </section>
 
   <!-- FOOTER -->
