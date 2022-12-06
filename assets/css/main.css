@@ -1,0 +1,18 @@
+:root {
+  --primary-color: rgb(20, 123, 111);
+  --secondary-color: rgb(31, 181, 163);
+  --tertiary-color: rgb(40, 226, 205);
+  --dark-color: rgb(49, 46, 46);
+  --light-color: rgb(223, 214, 214);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6;
+  background: var(--light-color)
+}
