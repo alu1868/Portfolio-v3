@@ -11,5 +11,10 @@
 body {
   font-family: 'Dosis', sans-serif;
   line-height: 1.6;
-  background: white
+  background: $white-color;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
 }
