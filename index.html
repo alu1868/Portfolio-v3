@@ -1,116 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Google Fonts -->
-
-  <!-- Local Style Sheet -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <!-- Local Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/1e50ce9b0f.js" crossorigin="anonymous"></script>
-
-  <title>AboutMe</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/ico">
+  <title>Alexander Lu | Full Stack Developer</title>
 </head>
-<body>
 
-  <!-- Section A: Hero Banner -->
+<body>
+  <!-- Header -->
   <header id="header-home">
     <div class="container">
-      <!-- Sectiona A.1: Navigation Bar -->
-      <nav>
-        <a id="nav-logo" href="index.html">
-          <!-- [NEED TO FIND LOGO TO USE FOR SITE] -->
-          <img src="." alt="my portfolio" id="logo">
+      <nav id="main-nav">
+        <a id='nav-logo' href="index.html">
+          <img src="./img/logo2.png" alt="myPortfolio" id="logo">
         </a>
-        <!-- Nav Links -->
         <ul>
           <li><a href="index.html" class="current">Home</a></li>
-          <li><a href="index.html">About</a></li>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="index.html">Contact</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-      <!-- Section A.2: Hero Banner -->
-      <div>
-        <h1>Hi I'm Alex,</h1>
+      <div class="header-content">
+        <h1>Hey I'm Alex,
+        </h1>
         <h2>
-          <span class="txt-type" data-wait="4000"
-          data-words='["A Full Stack Developer", "Green Energy Aficionado", "Amateur Film-Making Enthusiast"]'></span>
+          <span class="txt-type" data-wait="3000"
+            data-words='["A Full Stack Developer", "A Critical Thinker", "A Quirky Ping Pong Player"]'></span>
         </h2>
-        <p>I specialize in Full Stack Web Development with a focus on JavaScript, React, Nodejs, and MongoDB</p>
-        <a href="work.html" class="btn-light">Check Out My Work</a>
+        <p class="lead">I specialize in Full Stack Web Development with a focus on JavaScript, React, Nodejs, MongoDB
+        </p>
+        <a href="work.html" class="btn-light">View My Work</a>
       </div>
     </div>
   </header>
 
-  <!-- Section B: Transition Color Banner -->
-  <div id="transitionA"></div>
-
-  <!-- Section C: About Me -->
-  <section>
-    <container>
-      <!-- Sectiona C.1: Photo + Brief Description -->
-      <div>
-        <img src="./assets/images/self-portrait.jpg" alt="Alex Lu">
-        <h3>Alexander Lu</h3>
-        <h4>Full-Stack Web Developer based in Austin Texas</h4>
-      </div>
-      <!-- Section C.2: My Strengths title -->
-      <div>
-        <h5>PILLARS AND VALUES</h5>
-        <p>Both my professional and personal experiences have provided my with a quicver of valuable skills</p>
-      </div>
-      <!-- Section C.3: Strengths Allocation -->
-      <content>
-        <!-- Section C.3.1: Problem Solving -->
-        <div>
-          <i class="fas fa-cogs fa-4x process-icon my-2"></i>
-          <h6>PROBLEM SOLVING/CRITICAL THINKING</h6>
-          <p>With my completion of the Full Stack Coding Bootcamp from the University of Texas, I have been equipped with relevant coding skills and mindset to pursue a vast new field</p>
-          <p>That means being ready for failure and learning from mistakes, nothing beats finding an issue and optimizing the solutions.</p>
-        </div>
-        <!-- Section C.3.2: Team-player/Communication -->
-        <div>
-          <i class="fas fa-users fa-4x process-icon my-2"></i>
-          <h6>TEAMWORK/COMMUNICATION</h6>
-          <p>Having worked alongside professionals as an amateur filmmaker, I've fine tuned the means to work coherently with cast and crew in order to tackle issues at the utmost efficiency.</p>
-          <p>Effective Communication, Open-Mindedness, Compromise, and Team Member Support</p>
-        </div>
-        <!-- Section C.3.3: Creativity/Critical Thinking -->
-        <div>
-          <i class="fas fa-comments fa-4x process-icon my-2"></i>
-          <h6>CREATIVITY/CRITICAL THINKING</h6>
-          <p>It's important to apply yourself to the situation, no problem has strictly one answer and there’s always room to improve. Put your own stamp on things, give it a twist, think beyond your walls.</p>
-          <p>As an amateur film maker, I derive my influences from various media, and applied myself to </p>
-        </div>
-        <!-- Section C.3.4: Flexible/Adaptive -->
-        <div>
-          <i class="fas fa-users fa-4x process-icon my-2"></i>
-          <h6>FLEXIBLE/ADAPTIVE</h6>
-          <p>Sometimes you’re the nail and sometimes you’re the hammer. Nothing really puts you in your place like being humbled by a mentor.</p>
-          <p>I’m always striving for self improvement, and looking to tune my craft</p>
-        </div>
-      </content>
-      <a href="contact.html" class="btn-light">Let's Work Together</a>
-    </container>
+  <!-- Section A: Strengths -->
+  <section id="home-a" class="text-center pt-2">
+    <div class="container">
+      <h2 class="section-title">My Strengths</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Both my professional and personal experiences have provided me with a quiver of valuable skills
+      </p>
+    </div>
   </section>
 
-  <!-- FOOTER -->
-  <footer>
+  <!-- Section B: Process -->
+  <section id="home-c" class="text-center pb-2">
+    <div class="container">
+      <div class="process">
+        <div>
+          <i class="fas fa-cogs fa-4x process-icon my-2">
+            <!-- <div class="process-step">1</div> -->
+          </i>
+          <h3 class='main-font'>Problem Solving / Critical Thinking</h3>
+          <p>
+            The completion of a Full Stack Coding Bootcamp through the University of Texas has
+            armed me with valuable coding skills including version control, debugging, and multiple software
+            <span><a href="about.html#about-tech">Technologies</a></span>.
+          </p>
+          <p class='pt-1'>
+            My technical background in solar design allowed for an easy industry transition. I've spent many years
+            solving a plethora of mechanical obstacles.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-comments fa-4x process-icon my-2">
+            <!-- <div class="process-step">2</div> -->
+          </i>
+          <h3 class='main-font'>Communication / Organization</h3>
+          <p>
+            Throughout both my professional and personal endeavors, I've always been valued for my ability to
+            effectively communicate both verbally and in writing.
+          </p>
+          <p class='pt-1'>
+            I am constantly focused on detail and organization in every aspect of life. Staying organized simply makes
+            life easier IMO.
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-users fa-4x process-icon my-2">
+            <!-- <div class="process-step">3</div> -->
+          </i>
+          <h3 class='main-font'>Teamwork / Collaboration</h3>
+          <p>
+            Being a member of an elite service team in the solar industry, I've developed the core concepts necessary
+            to work coherently with colleagues in order to perform at the highest standard.
+          </p>
+          <p class="pt-1">
+            Effective Communication, Delegation, Sharing Ideas, and Team Member Support
+          </p>
+        </div>
+        <div>
+          <i class="fas fa-brain fa-4x process-icon my-2">
+            <!-- <div class="process-step">4</div> -->
+          </i>
+          <h3 class='main-font'>Creativity / Determination</h3>
+          <p>
+            I'm always in search of new creative outlets. As a life long table tennis player, I've spent many hours practicing, studying, optimizing and being inspired by great table tennis players.
+          </p>
+          <p class="pt-1">
+            I've spent much of my free time engaging in a variety of scenes and cultures all across the beautiful city of  Austin.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="main-footer">
     <div class="footer-content container">
-    <p>Copyright &copy; 2022 All Rights Reserved</p>
+      <p>Copyright &copy; 2023 All Rights Reserved</p>
       <div class="social">
-        <a href="https://github.com/alu1868" target="_blank">
+        <a href="https://github.com/HeyJustCallMeAlex" target="_blank">
           <i class="fab fa-github"></i>
         </a>
         <a href="https://www.linkedin.com/in/alexander-lu-361599228/" target="_blank">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="./assets/files/Resume+8-20.pdf" target="_blank">
+        <a href="./files/AlexanderLu-Resume.pdf" target="_blank">
           <i class="fas fa-file-alt"></i>
         </a>
         <a href="mailto:alu1868@gmail.com" target="_blank">
@@ -120,7 +138,9 @@
     </div>
   </footer>
 
-  <!-- Type Effect -->
-  <script src="./assets/js/typewriter.js"></script>
+
+  <!-- Type Effect Tutorial -->
+  <script src="js/typewriter.js"></script>
 </body>
+
 </html>

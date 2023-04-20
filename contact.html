@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
+  <!-- Local Stylesheets -->
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1e50ce9b0f.js" crossorigin="anonymous"></script>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/ico">
+  <title>Alexander Lu | Contact</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header id="header-inner">
+    <div class="container">
+      <nav id="main-nav">
+        <a id='nav-logo' href="index.html">
+          <img src="./img/logo2.png" alt="myPortfolio" id="logo">
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Work</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Section A: Contact Form -->
+  <section id="contact" class="text-center py-3 bg-dark ">
+    <div id="contact-a" class="container">
+      <h2 class="section-title">Contact Me</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Here is how you can reach me</p>
+      <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
+        <div class="text-fields">
+          <input type="text" class="text-input name-input" placeholder="Name" name="name" />
+          <input type="text" class="text-input subject-input" placeholder="Subject" name="subject" />
+          <input type="email" class="text-input email-input" placeholder="Email Address" name="email" />
+          <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone" />
+          <textarea class="text-input message-input" placeholder="Enter Message" name="message">
+          </textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn-medium">Submit</button>
+      </form>
+    </div>
+    <!-- Section B: Contact info -->
+    <div id="contact-b" class="py-5 bg-dark">
+      <div class="container">
+        <div class="contact-info">
+          <div>
+            <i class="fas fa-envelope fa-2x"></i>
+            <h3>Email</h3>
+            <p>alu1868@gmail.com</p>
+          </div>
+          <div>
+            <i class="fas fa-phone fa-2x"></i>
+            <h3>Phone</h3>
+            <p>281.757.0963</p>
+          </div>
+          <div>
+            <i class="fas fa-address-card fa-2x"></i>
+            <h3>Address</h3>
+            <p>Austin, TX</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section C: Tagline -->
+  <section id="contact-c" class="bg-main py-5">
+    <div class="container">
+      <h1>Let's work together!</h1>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer id="main-footer">
+    <div class="footer-content container">
+      <p>Copyright &copy; 2023 All Rights Reserved</p>
+      <div class="social">
+        <a href="https://github.com/HeyJustCallMeAlex" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/alexander-lu-361599228/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="./files/AlexanderLu-Resume.pdf" target="_blank">
+          <i class="fas fa-file-alt"></i>
+        </a>
+        <a href="mailto:alu1868@gmail.com" target="_blank">
+          <i class="fas fa-paper-plane"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

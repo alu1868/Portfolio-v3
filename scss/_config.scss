@@ -1,0 +1,23 @@
+// Variables
+$website-width: 1280px;
+// $main-color: #ffbc00;
+$main-color: #08971b;
+$light-color: #f4f4f4;
+$dark-color: #333;
+$secondary-color: rgb(151, 118, 75);
+// $medium-color: #ccc;
+$medium-color: #539b5c;
+$bg-image: url('../img/showcase2 copy.jpg');
+
+// showcase 2 <span>Photo by <a href="https://unsplash.com/@blocks?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">blocks</a> on <a href="https://unsplash.com/s/photos/technology?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+// showcase 3 <span>Photo by <a href="https://unsplash.com/@parkerabyrd?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Parker Byrd</a> on <a href="https://unsplash.com/s/photos/macbook?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+
+// Set Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
